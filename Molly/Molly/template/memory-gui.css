@@ -1,0 +1,28 @@
+/*To Do: make game 3x4, add text, center inside text, get card to disappear once it's matched*/
+
+#memorygame {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.faceDown {
+	width: 125px;
+	height: 106px;
+	margin: 10px;
+	float: left;
+	background: lightblue;
+}
+
+.faceUp {
+	width: 125px;
+	height: 106px;
+	margin: 10px;
+	float: left;
+}
+.removed {
+	width: 125px;
+	height: 106px;
+	margin: 10px;
+	float: left;
+	background: white;
+}
