@@ -5,18 +5,27 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#heading {
+	font-family: Quicksand;
+	text-align: center;
+	color: #a9a9a9;
+}
+
 .faceDown {
 	width: 125px;
 	height: 106px;
 	margin: 10px;
 	float: left;
-	background: lightblue;
+	background-color: lightblue;
+	border-radius: 15px;
 }
 
 .faceUp {
 	width: 125px;
 	height: 106px;
 	margin: 10px;
+	border-radius: 15px;
 	float: left;
 }
 .removed {
@@ -25,4 +34,24 @@
 	margin: 10px;
 	float: left;
 	background: white;
+}
+
+img {
+	width: 125px;
+	height: 106px;
+	border-radius: 15px;
+}
+
+.resetButton {
+	background: lightblue;
+	color: black;
+	font-size: 1.2em;
+	font-family: Quicksand;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-top: 10px;
+}
+
+.resetButton:hover {
+	border: 2px solid black;
 }

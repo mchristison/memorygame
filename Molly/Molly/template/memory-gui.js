@@ -9,6 +9,7 @@ var MemoryGUI = (function () {
 			div.classList.add('faceDown');
 			div.addEventListener('click', function() { var id = this.getAttribute('id');
 		game.lift((id*1));
+		showCard.innerHTML = "<img src='photos/" + displayString + ".jpg'>";
 	});
 			document.getElementById(container).appendChild(div);
 		}
@@ -18,7 +19,7 @@ var MemoryGUI = (function () {
 			var showCard = document.getElementById(where);
 			showCard.classList.remove('faceDown');
 			showCard.classList.add('faceUp');
-			showCard.innerHTML = displayString;
+			showCard.innerHTML = "<img src='photos/" + displayString + ".jpg'>";
 		};
 
 	this.removeSoon = function(whereArr) {

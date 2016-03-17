@@ -1,12 +1,12 @@
 // See cardset-example.js for examples
 
 var MemoryCards = (function() {
-	var instaCats = [['Nala', 1], [document.nala, 1],
-								['Maru', 2],[document.maru, 2],
-								['Grumpy', 3],[document.grumpy, 3],
-								['Elfie & Gimli', 4], [document.gimli, 4],
-								['Lil Bub', 5], [document.lilbub, 5],
-								['Hamilton', 6], [document.hamilton, 6] ];
+	var instaCats = [['Nala', 1], ['nala', 1],
+				['Maru', 2],['maru', 2],
+				['Grumpy', 3],['grumpy', 3],
+				['Gimli', 4], ['gimli', 4],
+				['LilBub', 5], ["lilbub", 5],
+				['Hamilton', 6], ["hamilton", 6] ];
 
 	function Ctor() {
 		this.values = function() {
