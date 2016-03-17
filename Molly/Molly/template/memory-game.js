@@ -20,7 +20,7 @@ var MemoryGame = (function() {
 		reset();// reset now as part of init'ing
 
 		var gui = function() {//accessor fn
-			if (arguments.length === 0) 
+			if (arguments.length === 0)
 				return _gui; //getter
 			_gui = arguments[0]; //setter
 		}
@@ -67,8 +67,6 @@ var MemoryGame = (function() {
 					removeAt(there);
 					if (_gui)
 						_gui.removeSoon([here,there]);
-					//optional: report match
-					console.log("Match!")
 				} else {
 					if (_gui)
 						_gui.hideSoon([here,there]);
@@ -78,7 +76,7 @@ var MemoryGame = (function() {
 			}
 			if (_gui)
 				_gui.show(here,displayHere);
-			return displayHere; 
+			return displayHere;
 		}
 
 		// Make some functions public as instance methods:
@@ -117,5 +115,3 @@ var MemoryGame = (function() {
 
 	return Ctor;
 })();
-
-
