@@ -5,11 +5,11 @@ function go() {
 	cards = new MemoryCards();
 	game  = new MemoryGame(cards);
 	gui   = new MemoryGUI('memorygame', game); //'memorygame' is the id of div where gui should be inserted'
-	// var resetButton = document.createElement('button');
-	// 	 resetButton.innerHTML = 'Start Over';
-	// 	 resetButton.classList.add('resetButton');
-	// 	 resetButton.addEventListener('click', gui.reset);
-	// 	 document.getElementById('memorygame').appendChild(resetButton);
+	var resetButton = document.createElement('button');
+		 resetButton.innerHTML = 'Start Over';
+		 resetButton.classList.add('resetButton');
+		 resetButton.addEventListener('click', gui.reset);
+		 document.getElementById('memorygame').appendChild(resetButton);
 }
 
 window.addEventListener("load",go);

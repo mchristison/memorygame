@@ -9,14 +9,14 @@
 #heading {
 	font-family: Pacifico, cursive;
 	text-align: center;
-	color: white;
-	background-color: #125688;
+	color: #125688;
+	background-color: white;
 	font-size: 75px;
 	padding-bottom: 0px;
 }
 
 body {
-	background-color: #125688;
+	background-color: white;
 }
 
 .faceDown {
@@ -47,7 +47,7 @@ body {
 	margin-bottom: 20px;
 	margin-top: 20px;
 	float: left;
-	background-color: #125688;
+	background-color: white;
 }
 
 img {
@@ -57,15 +57,15 @@ img {
 }
 
 .resetButton {
-	background: lightblue;
-	color: black;
+	background: #125688;
+	color: white;
 	font-size: 1.2em;
-	font-family: Quicksand;
+	font-family: Pacifico, cursive;
 	border-radius: 5px;
 	border: 1px solid black;
 	margin-top: 10px;
 }
 
 .resetButton:hover {
-	border: 2px solid black;
+	border: 2px solid white;
 }

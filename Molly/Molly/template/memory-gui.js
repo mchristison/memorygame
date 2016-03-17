@@ -30,7 +30,7 @@ var MemoryGUI = (function () {
 				removeCard.classList.remove('faceUp');
 				removeCard.classList.add('removed');
 			});
-		}, 1000);
+		}, 680);
 	};
 	this.hideSoon = function(whereArr) {
 		window.setTimeout(function() {
@@ -40,7 +40,7 @@ var MemoryGUI = (function () {
 				hideCard.classList.remove('faceUp');
 				hideCard.classList.add('faceDown');
 			});
-		}, 1000);
+		}, 680);
 	};
 	this.reset();
 }
