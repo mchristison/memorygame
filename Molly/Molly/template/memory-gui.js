@@ -2,7 +2,11 @@ var MemoryGUI = (function () {
 	function GuiCtor(container,game) {
 		game.gui(this); // link game to this gui
 
-		this.reset = function() {
+		var _reset = this.reset = function() {
+			var containerEl = document.getElementById(container);
+
+			containerEl.innerHTML = '';
+
 		for (var i = 0; i < game.size(); i++) {
 			var div = document.createElement('div');
 			div.setAttribute('id', i);
@@ -11,8 +15,12 @@ var MemoryGUI = (function () {
 		game.lift((id*1));
 		showCard.innerHTML = "<img src='photos/" + displayString + ".jpg'>";
 	});
-			document.getElementById(container).appendChild(div);
+			containerEl.appendChild(div);
 		}
+		var button = document.createElement('button');
+		button.addEventListener('click', _reset);
+		button.innerHTML = 'Start Over';
+		containerEl.appendChild(button);
 	};
 
 	this.show = function(where,displayString) {
